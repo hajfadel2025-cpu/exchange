@@ -6,7 +6,7 @@
     <title>مكتب حج فاضل - أسعار الصرف</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(180deg, #1e5799 0%, #207cca 100%);
             color: white;
             padding: 20px;
@@ -14,36 +14,63 @@
             display: flex;
             justify-content: center;
         }
-        .container { width: 100%; max-width: 800px; }
+        .container { width: 100%; max-width: 850px; }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
         .row { display: flex; gap: 10px; margin-bottom: 10px; }
-        .cell { flex: 1; background: #0d2b52; padding: 15px; border-radius: 8px; text-align: center; font-size: 1.5rem; font-weight: bold; }
+        .cell { flex: 1; background: #0d2b52; padding: 15px; border-radius: 8px; text-align: center; font-size: 1.8rem; font-weight: bold; }
         
-        /* تنسيق العنوان الجديد بالأسفل */
+        /* تنسيق صندوق العنوان المطور */
         .footer-address {
             margin-top: 30px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 15px;
+            background: rgba(13, 43, 82, 0.8); /* خلفية داكنة للوضوح */
+            padding: 30px;
+            border-radius: 20px;
             text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            line-height: 1.6;
+            border: 3px solid #ffeb3b; /* إطار أصفر */
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
         }
-        .address-title { font-size: 2.2rem; font-weight: bold; color: white; display: block; margin-bottom: 15px; }
-        .address-details { font-size: 1.4rem; color: #e0e0e0; display: block; margin-bottom: 10px; }
-        .phone-highlight { font-size: 1.8rem; color: #ffeb3b; font-weight: bold; }
+
+        /* تحكم بحجم الخط والألوان هنا */
+        .main-title { 
+            font-size: 2.8rem; /* حجم خط كبير جداً */
+            color: #ffeb3b; /* لون أصفر فاقع */
+            display: block; 
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .sub-details { 
+            font-size: 1.6rem; /* حجم خط التفاصيل */
+            color: #ffffff; /* لون أبيض */
+            line-height: 1.5;
+            display: block;
+        }
+
+        .contact-info {
+            font-size: 1.9rem;
+            color: #00ff00; /* لون أخضر للأرقام */
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffffff;
+            color: #1e5799;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div>
-                <div style="font-size: 2.5rem; font-weight: bold;">مكتب حج فاضل</div>
-                <div style="font-size: 1.1rem; opacity: 0.8;">hajfadel</div>
-            </div>
-            <div style="text-align: left;">
-                <div id="clock" style="font-size: 2rem;">05:02 PM</div>
-            </div>
+            <div style="font-size: 3rem; font-weight: bold;">مكتب حج فاضل</div>
+            <div id="clock" style="font-size: 2rem;">05:06 PM</div>
         </div>
 
         <div class="row">
@@ -53,16 +80,23 @@
         </div>
 
         <div class="footer-address">
-            <span class="address-title">📍 أربيل - هولير</span>
-            <span class="address-details">شارع 30 متري / جسر سيداوا - جانب مطعم سيوار حلب وفندق مشجر - مقابل دائرة المكافحة</span>
-            <div class="phone-highlight">
-                📞 موبايل: 07503693455 | 07508741611
+            <span class="main-title">📍 مكتب حج فاضل هولير / أربيل</span>
+            
+            <span class="sub-details">
+                شارع 30 متري / جسر سيداوا - جانب مطعم سيوار حلب وفندق مشجر - مقابل دائرة المكافحة
+            </span>
+
+            <div class="contact-info">
+                📞 07503693455 - 07508741611
                 <br>
                 💬 واتساب: 07501983870
             </div>
-            <div style="margin-top: 15px; font-size: 1.1rem; color: #ffeb3b;">
+
+            <div style="margin-top: 15px; font-size: 1.3rem; color: #ffeb3b;">
                 ⏰ دوام المكتب: صيفاً (9:30 ص - 6:30 م) | شتاءً (9:30 ص - 5:30 م)
             </div>
+
+            <a href="https://goo.gl/maps/ti2MMXu6opz" class="map-link">📍 فتح موقع المكتب على الخريطة</a>
         </div>
     </div>
 </body>
