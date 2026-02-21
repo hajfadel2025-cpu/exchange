@@ -6,7 +6,7 @@
     <title>مكتب حج فاضل - أسعار الصرف</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: sans-serif;
             background: linear-gradient(180deg, #1e5799 0%, #207cca 100%);
             color: white;
             padding: 20px;
@@ -16,87 +16,61 @@
         }
         .container { width: 100%; max-width: 850px; }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .labels { display: flex; gap: 10px; margin-bottom: 10px; }
+        .label { flex: 1; background: white; color: #1a4b8c; text-align: center; padding: 5px; border-radius: 5px; font-weight: bold; }
         .row { display: flex; gap: 10px; margin-bottom: 10px; }
         .cell { flex: 1; background: #0d2b52; padding: 15px; border-radius: 8px; text-align: center; font-size: 1.8rem; font-weight: bold; }
+        .currency { display: flex; align-items: center; gap: 10px; justify-content: center; }
         
-        /* تنسيق صندوق العنوان المطور */
         .footer-address {
             margin-top: 30px;
-            background: rgba(13, 43, 82, 0.8); /* خلفية داكنة للوضوح */
-            padding: 30px;
+            background: rgba(13, 43, 82, 0.8);
+            padding: 25px;
             border-radius: 20px;
             text-align: center;
-            border: 3px solid #ffeb3b; /* إطار أصفر */
-            box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+            border: 2px solid #ffeb3b;
         }
-
-        /* تحكم بحجم الخط والألوان هنا */
-        .main-title { 
-            font-size: 2.8rem; /* حجم خط كبير جداً */
-            color: #ffeb3b; /* لون أصفر فاقع */
-            display: block; 
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .sub-details { 
-            font-size: 1.6rem; /* حجم خط التفاصيل */
-            color: #ffffff; /* لون أبيض */
-            line-height: 1.5;
-            display: block;
-        }
-
-        .contact-info {
-            font-size: 1.9rem;
-            color: #00ff00; /* لون أخضر للأرقام */
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        .map-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #ffffff;
-            color: #1e5799;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+        .main-title { font-size: 2.5rem; font-weight: bold; color: #ffeb3b; display: block; margin-bottom: 10px; }
+        .sub-details { font-size: 1.4rem; display: block; margin-bottom: 10px; }
+        .contact-info { font-size: 1.7rem; color: #00ff00; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div style="font-size: 3rem; font-weight: bold;">مكتب حج فاضل</div>
-            <div id="clock" style="font-size: 2rem;">05:06 PM</div>
+            <div>
+                <div style="font-size: 2.8rem; font-weight: bold;">مكتب حج فاضل</div>
+                <div style="font-size: 1.2rem; opacity: 0.8;">hajfadel</div>
+            </div>
+            <div id="clock" style="font-size: 2rem;">05:02 PM</div>
+        </div>
+
+        <div class="labels">
+            <div class="label">SALE</div>
+            <div class="label">BUY</div>
+            <div class="label">CURRENCY</div>
         </div>
 
         <div class="row">
-            <div class="cell">USD 🇺🇸</div>
-            <div class="cell">152.000</div>
             <div class="cell">153.000</div>
+            <div class="cell">152.000</div>
+            <div class="cell currency">USD 🇺🇸</div>
+        </div>
+
+        <div class="row">
+            <div class="cell">117.75</div>
+            <div class="cell">118</div>
+            <div class="cell currency">EUR 🇪🇺</div>
         </div>
 
         <div class="footer-address">
-            <span class="main-title">📍 مكتب حج فاضل هولير / أربيل</span>
-            
+            <span class="main-title">📍 أربيل - هولير</span>
             <span class="sub-details">
-                شارع 30 متري / جسر سيداوا - جانب مطعم سيوار حلب وفندق مشجر - مقابل دائرة المكافحة
+                شارع 30 متري / جسر سيداوا - جانب مطعم سيوار حلب - مقابل دائرة المكافحة
             </span>
-
             <div class="contact-info">
                 📞 07503693455 - 07508741611
-                <br>
-                💬 واتساب: 07501983870
             </div>
-
-            <div style="margin-top: 15px; font-size: 1.3rem; color: #ffeb3b;">
-                ⏰ دوام المكتب: صيفاً (9:30 ص - 6:30 م) | شتاءً (9:30 ص - 5:30 م)
-            </div>
-
-            <a href="https://goo.gl/maps/ti2MMXu6opz" class="map-link">📍 فتح موقع المكتب على الخريطة</a>
         </div>
     </div>
 </body>
